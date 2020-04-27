@@ -1,7 +1,7 @@
 # DICOM Web-PACS Viewer 
 
 This is my old pre-dicomweb PACS proxy and HTML5 DICOM-viewer based on Qt and DCMTK.
-It provides a rest api that gets proxied to DIMSE networking and uses a js client to render images.
+It provides a rest api that proxies requests to DIMSE networking (C-FIND and C-MOVE) and uses a html/js client to render images.
 
 The webclient source is hosted here https://github.com/knopkem/pacsnode-webclient
 
