@@ -1,0 +1,5 @@
+add_subdirectory(pacsnode)
+add_subdirectory(pnCore)
+add_subdirectory(pnDicom)
+add_subdirectory(pnServer)
+install (DIRECTORY webclient/dist/ DESTINATION ${BIN_INSTALL_DIR}/)

@@ -1,0 +1,18 @@
+#ifndef VERSION_CONFIG_H
+#define VERSION_CONFIG_H
+
+// warning this is a cmake generated file
+#define PN_VERSION_MAJOR @PN_VERSION_MAJOR@
+#define PN_VERSION_MINOR @PN_VERSION_MINOR@
+#define PN_VERSION_BUILD @PN_VERSION_BUILD@
+
+#define PN_VERSION_STRING "${PN_VERSION_MAJOR}.${PN_VERSION_MINOR}.${PN_VERSION_BUILD}"
+
+#define PN_APPLICATION_NAME         "Pacsnode"
+#define PN_ORGANIZATION_NAME        "blowfishsoftware"
+#define PN_ORGANIZATION_DOMAIN      "pacsnode.com"
+#define PN_ORGANIZATION_ADDRESS     "143 avenue de la liberte, 06220 Golfe-Juan, France"
+#define PN_COPYRIGHT                "\xa9 2012 Blowfishsoftware. All rights reserved."
+#define PN_EMAIL_ADDRESS            "knopkem@pacsnode.com"
+
+#endif // VERSION_CONFIG_H

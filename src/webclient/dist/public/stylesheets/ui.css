@@ -1,0 +1,92 @@
+
+html{
+  overflow: hidden;
+}
+
+.ui-page { 
+    background:#2b2e31;
+}
+
+.ui-header {
+    padding: 0px;
+    margin: 0px;
+}
+ 
+.ui-content {
+    padding: 0px;
+    margin: 0px;
+}
+
+#header-wrapper {
+    position: relative;
+    left: 2%;
+    width: 96%
+}
+ 
+.pn-study-listview-dynamic {
+    margin: 0px;
+    padding: 0px;
+}
+
+.pn-series-listview {
+    margin: 0px;
+}
+ 
+.study-wrapper, .study-wrapper div.iscroll-scroller {   
+    padding: 0px;
+    left: 2%;
+    width: 98%;
+}
+
+.series-wrapper, .series-wrapper div.iscroll-scroller {
+    left: 2%;
+    width: 98%;
+}
+
+.pn-viewer-canvas {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    z-index: 0;
+}
+
+.pn-overlay-canvas {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    z-index: 1;
+}
+/*
+.pn-div {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+*/
+.pn-btn-left {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    z-index: 2;
+}
+
+.pn-btn-right {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    z-index: 2;
+}
+
+.pn-btn-center {
+    position: absolute;
+    top: 5px;
+    right: 50%;
+    z-index: 2;
+}
+
+.ui-li-thumb {
+    min-height: 80px; 
+    min-width: 80px;
+}
+

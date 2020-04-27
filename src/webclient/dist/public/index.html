@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Pacsnode</title>
+    <meta charset="utf-8">     
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link media="screen" rel="stylesheet" type="text/css" href="stylesheets/jquery.mobile-1.4.2.min.css" />
+    <link media="screen" rel="stylesheet" type="text/css" href="stylesheets/jquery.mobile.iscrollview.css"/>
+    <link media="screen" rel="stylesheet" type="text/css" href="stylesheets/ui.css"/>
+
+    <script src="javascripts/external.js" type="text/javascript"></script>
+
+    <!-- this needs to be loaded last -->
+    <script src="javascripts/internal.js" type="text/javascript"></script>
+   
+    
+  </head>
+
+  <body>
+
+    <!--  STUDIES -->
+    <div data-role="page" id="studies" >
+      <div data-role="header" data-position="fixed" data-theme="b" style="text-align:center">
+        <div id="header-wrapper">     
+            <ul id="pn-study-listview" data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Patient Name/ID" data-filter-theme="a"></ul>        
+        </div>
+      </div>
+
+      <div data-role="content">
+         <div class="study-wrapper" data-iscroll="" >
+            <ol id="pn-study-listview-dynamic" data-role="listview" data-inset="true" ></ol>
+          </div>
+      </div>
+        
+    </div>
+
+    <!--  SERIES -->
+    <div data-role="page" id="series" >
+      <div data-role="header" data-position="fixed" data-theme="b">
+            <a href="#studies" data-icon="arrow-l">Back to Studies</a>
+            <h1 id = "label" >pacsnode</h1>
+        </div>
+      <div data-role="content">
+        <div class="series-wrapper" data-iscroll="" >
+            <ol id="pn-series-listview" data-role="listview" data-inset="true" data-filter="false" data-count-theme="b"></ol>
+        </div>
+       </div>
+
+        
+    </div>
+
+    <!--  IMAGES -->
+    <div data-role="page" id="images" class="pn-div">
+       
+      <div data-role="content" class="pn-div">
+          <div data-role="panel" data-position="left" data-display="overlay" data-theme="b" id="tool-panel-left">
+            <ul id="tool-listview" data-role="listview">
+                <li id="li-close" data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+                <li id ="li-div-1" data-role="list-divider">Interaction</li>
+                <li id="li-stack" ><a href="#">Stack</a></li>
+                <li id="li-pan" ><a href="#">Pan</a></li>
+                <li id="li-zoom" ><a href="#">Zoom</a></li>
+                <li id ="li-div-2" data-role="list-divider">Tools</li>
+                <li id="li-window" ><a href="#">Window</a></li>
+                <li id="li-select" ><a href="#">Select</a></li>
+            </ul>
+          </div><!-- /panel -->
+
+          <div data-role="panel" data-position="right" data-display="overlay" data-theme="b" id="tool-panel-right">
+            <ul id="tool-listview-2" data-role="listview">
+                <li id="li-close-2" data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+                <li id ="li-div-3" data-role="list-divider">Measurements</li>
+                <li id="li-distance" ><a href="#">Distance</a></li>
+                <li id="li-angle" ><a href="#">Angle</a></li>
+                <li id="li-cobb-angle" ><a href="#">Cobb Angle</a></li>
+                <li id="li-point" ><a href="#">Point Probe</a></li>
+                <li id="li-roi-1" ><a href="#">ROI (rectangular)</a></li>
+                <li id="li-roi-2" ><a href="#">ROI (circular)</a></li>
+                <li id="li-anno" ><a href="#">Text Annotate</a></li>
+                <li id="li-shutter" ><a href="#">Shutter</a></li>
+            </ul>
+          </div><!-- /panel -->
+          
+          <a href="#tool-panel-left" class="ui-btn ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-notext pn-btn-left">Tools-Left</a>
+          <a href="#tool-panel-right" class="ui-btn ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-notext pn-btn-right">Tools-Right</a>
+          <a href="#series" class="ui-btn ui-shadow ui-corner-all ui-icon-carat-u ui-btn-icon-notext pn-btn-center">Go-Back</a>
+          <canvas id="viewerCanvas" class="pn-viewer-canvas" ></canvas>
+          <canvas id="overlayCanvas" class="pn-overlay-canvas" ></canvas>
+          </div>
+    </div>
+   </body>
+</html>
